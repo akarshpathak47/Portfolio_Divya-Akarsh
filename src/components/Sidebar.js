@@ -3,6 +3,7 @@ import himani from '../images/himani.jpg';
 import './Sidebar.css';
 import { FaHome, FaUser, FaFileAlt, FaImages, FaConciergeBell, FaBars, FaEnvelope } from 'react-icons/fa';
 
+import { Link } from 'react-router-dom';
 const socialLinks = [
     { href: '#', src: 'https://img.icons8.com/ios-filled/50/ffffff/twitterx.png', alt: 'X' },
     { href: '#', src: 'https://img.icons8.com/ios-filled/50/ffffff/facebook.png', alt: 'Facebook' },
@@ -15,9 +16,8 @@ const socialLinks = [
     { icon: <FaHome />, label: 'Home' },
     { icon: <FaUser />, label: 'About' },
     { icon: <FaFileAlt />, label: 'Resume' },
-    { icon: <FaImages />, label: 'Portfolio' },
-    { icon: <FaConciergeBell />, label: 'Services' },
-    { icon: <FaBars />, label: 'Dropdown' },
+   
+    { icon: <FaBars />, label: 'Skills' },
     { icon: <FaEnvelope />, label: 'Contact' }
   ];
 
@@ -39,7 +39,7 @@ function Sidebar(){
     </div>
     <div className="sidebar-menu">
       {menuItems.map((item, index) => (
-        <a key={index} href="#" className="menu-item">
+        <a key={index} href="/About" className="menu-item">
           {item.icon}
           <span>{item.label}</span>
         </a>

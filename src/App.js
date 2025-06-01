@@ -1,34 +1,25 @@
 import React from "react";
 import "./App.css";
-import himani from './images/himani.jpg';
-import Sidebar from "./components/Sidebar";
+import { Routes,Route} from 'react-router-dom'; 
+import Home from "./components/Home";
 import About from "./components/About";
 
 
 
-
-const App = () => {
+function App() {
+  
   return (
-
-    <div class="universal">
-      
- <div class="wrapper" >
-      <div class="side">
-      <Sidebar ></Sidebar>
-      </div>
-      
-     <div class="mainn">
-      <img  class="mainimg"src={himani} alt="himani" />
-      <div><About></About></div>
-      
-     </div>
-     
+    <div className="App">
+       <Routes>
+  <Route path="/"  element={<Home/>} />
+  <Route path="/about" element={<About/>} />
+  
+  
+       </Routes>
     </div>
 
-    <div></div>
-    </div>
-   
   );
-};
+    
+}
 
 export default App;
