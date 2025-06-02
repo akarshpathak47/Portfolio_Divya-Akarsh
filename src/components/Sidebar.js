@@ -2,27 +2,28 @@ import React from 'react'
 import himani from '../images/himani.jpg';
 import './Sidebar.css';
 import { Link } from 'react-router-dom';
-
+import { HashLink } from 'react-router-hash-link';
 
 
 import { FaHome, FaUser, FaFileAlt, FaImages, FaConciergeBell, FaBars, FaEnvelope } from 'react-icons/fa';
 
 
 const socialLinks = [
-    { href: '#', src: 'https://img.icons8.com/ios-filled/50/ffffff/twitterx.png', alt: 'X' },
+    { href: 'https://github.com/HimaniRajput-2003', src: 'https://img.icons8.com/ios-filled/50/ffffff/github.png', alt: 'Github' },
     { href: '#', src: 'https://img.icons8.com/ios-filled/50/ffffff/facebook.png', alt: 'Facebook' },
-    { href: '#', src: 'https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png', alt: 'Instagram' },
-    { href: '#', src: 'https://img.icons8.com/ios-filled/50/ffffff/skype.png', alt: 'Skype' },
-    { href: '#', src: 'https://img.icons8.com/ios-filled/50/ffffff/linkedin.png', alt: 'LinkedIn' }
+    { href: 'https://www.instagram.com/himani_rajput03?igsh=MWpvdnV1MGRuaXJ2MQ==', src: 'https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png', alt: 'Instagram' },
+    
+    { href: 'https://www.linkedin.com/in/himani-rajput-094637267/', src: 'https://img.icons8.com/ios-filled/50/ffffff/linkedin.png', alt: 'LinkedIn' }
   ];
   
 const menuItems = [
-  { icon: <FaHome />, label: 'Home', href: '#' },
-  { icon: <FaUser />, label: 'About', href: '#about' },
-  { icon: <FaFileAlt />, label: 'Resume', route: '/resume' }, // use 'route' for routing
-  { icon: <FaBars />, label: 'Skills', href: '#skills' },
-  { icon: <FaEnvelope />, label: 'Contact', href: '#contact' },
+  { icon: <FaHome />, label: 'Home', href: 'home' },
+  { icon: <FaUser />, label: 'About', href: 'about' },
+  { icon: <FaFileAlt />, label: 'Resume', route: '/resume' },
+  { icon: <FaBars />, label: 'Skills', href: 'skills' },
+  { icon: <FaEnvelope />, label: 'Contact', href: 'contact' },
 ];
+
 
 
 
@@ -49,10 +50,15 @@ function Sidebar(){
         <span>{item.label}</span>
       </Link>
     ) : (
-      <a key={index} href={item.href} className="menu-link">
+      <HashLink
+        key={index}
+        smooth
+        to={`/#${item.href}`}
+        className="menu-link"
+      >
         <span className="icon">{item.icon}</span>
         <span>{item.label}</span>
-      </a>
+      </HashLink>
     )
   )}
     </div>
