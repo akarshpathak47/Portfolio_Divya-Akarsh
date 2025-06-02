@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
 
-import { FaHome, FaUser, FaFileAlt, FaImages, FaConciergeBell, FaBars, FaEnvelope } from 'react-icons/fa';
+import { FaHome, FaUser, FaFileAlt,  FaBars, FaEnvelope } from 'react-icons/fa';
 
 
 const socialLinks = [
