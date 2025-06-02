@@ -2,7 +2,7 @@ import React from "react";
 import Sidebar from './Sidebar';
 import About from './About';
 import "./Home.css";
-import Skills from'./Skills';
+import Skills from './Skills';
 import ContactSection from './ContactSection';
 
 const Home = () => {
@@ -13,9 +13,15 @@ const Home = () => {
           <Sidebar />
         </div>
         <div className="about">
-          <About />
-          <Skills />
-          <ContactSection />
+          <section id="about">
+            <About />
+          </section>
+          <section id="skills">
+            <Skills />
+          </section>
+          <section id="contact">
+            <ContactSection />
+          </section>
         </div>
       </div>
     </div>

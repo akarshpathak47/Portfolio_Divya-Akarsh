@@ -5,7 +5,7 @@ import resume from './images/resume.pdf';
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section className="about-section" id='about'>
       <div className="about-top">
         <div className="profile-pic">
           <img src={himani} alt="Himani Rajput" />
@@ -36,7 +36,7 @@ const About = () => {
           <h2>📌 Experience</h2>
           <div className="timeline">
             <div className="timeline-item">
-              <span className="dot" />
+              <span  />
               <div className="timeline-content">
                 <h4>Bluestock Fintech <span>(Mar – May 2025)</span></h4>
                 <ul>
@@ -53,21 +53,21 @@ const About = () => {
           <h2>🎓 Education</h2>
           <div className="timeline">
             <div className="timeline-item">
-              <span className="dot" />
+              <span  />
               <div className="timeline-content">
                 <h4>B.Tech IT (2022–2026)</h4>
                 <p>MMMUT – CGPA: 7.88</p>
               </div>
             </div>
             <div className="timeline-item">
-              <span className="dot" />
+              <span  />
               <div className="timeline-content">
                 <h4>Senior Secondary (2021)</h4>
                 <p>90.20%</p>
               </div>
             </div>
             <div className="timeline-item">
-              <span className="dot" />
+              <span />
               <div className="timeline-content">
                 <h4>Secondary (2019)</h4>
                 <p>91.60%</p>
