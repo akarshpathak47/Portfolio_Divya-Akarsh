@@ -15,7 +15,6 @@ export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Send form data using fetch to FormSubmit
     const response = await fetch('https://formsubmit.co/ajax/rajputhimani2003@gmail.com', {
       method: 'POST',
       headers: {
@@ -27,7 +26,7 @@ export default function ContactSection() {
 
     if (response.ok) {
       alert('Thank you for contacting!');
-      setFormData({ name: '', email: '', message: '' }); // clear form
+      setFormData({ name: '', email: '', message: '' });
     } else {
       alert('Something went wrong. Please try again!');
     }
@@ -36,6 +35,7 @@ export default function ContactSection() {
   return (
     <div className="contact-section">
       <h2 className="contact-heading">Contact</h2>
+
       <div className="contact-box">
         <h3>Send a Note</h3>
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -82,12 +82,19 @@ export default function ContactSection() {
           <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" />
         </a>
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/himani_rajput03/?igsh=MWpvdnV1MGRuaXJ2MQ=="
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" />
         </a>
+      </div>
+
+      <div className="contact-info">
+        <h4>Get in Touch</h4>
+        <p><strong>Email:</strong> rajputhimani2003@gmail.com</p>
+        <p><strong>Phone:</strong> +91-7906015931</p>
+        <p><strong>Location:</strong> Bijnor,Uttar-Pradesh, India</p>
       </div>
     </div>
   );
