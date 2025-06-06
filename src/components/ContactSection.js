@@ -15,7 +15,7 @@ export default function ContactSection() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch('https://formsubmit.co/ajax/rajputhimani2003@gmail.com', {
+    const response = await fetch('https://formsubmit.co/ajax/akarshpathak47@gmail.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -75,7 +75,7 @@ export default function ContactSection() {
 
       <div className="contact-icons">
         <a
-          href="https://www.linkedin.com/in/himani-rajput-094637267/"
+          href="https://www.linkedin.com/in/akarsh-pathak-463834283/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -92,9 +92,9 @@ export default function ContactSection() {
 
       <div className="contact-info">
         <h4>Get in Touch</h4>
-        <p><strong>Email:</strong> rajputhimani2003@gmail.com</p>
-        <p><strong>Phone:</strong> +91-7906015931</p>
-        <p><strong>Location:</strong> Bijnor,Uttar-Pradesh, India</p>
+        <p><strong>Email:</strong> akarshpathak47@gmail.com</p>
+        <p><strong>Phone:</strong> +91-8299416716</p>
+        <p><strong>Location:</strong> Deoria,Uttar-Pradesh, India</p>
       </div>
     </div>
   );

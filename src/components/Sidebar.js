@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import himani from '../images/himani.jpg';
+import akarsh from './images/akarsh.jpg';
 import './Sidebar.css';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
@@ -13,7 +13,7 @@ import {
 } from 'react-icons/fa';
 
 const socialLinks = [
-  { href: 'https://github.com/HimaniRajput-2003', src: 'https://img.icons8.com/ios-filled/50/ffffff/github.png', alt: 'Github' },
+  { href: 'https://github.com/akarshpathak47', src: 'https://img.icons8.com/ios-filled/50/ffffff/github.png', alt: 'Github' },
   { href: '#', src: 'https://img.icons8.com/ios-filled/50/ffffff/facebook.png', alt: 'Facebook' },
   { href: 'https://www.instagram.com/himani_rajput03/?igsh=MWpvdnV1MGRuaXJ2MQ==', src: 'https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png', alt: 'Instagram' },
   { href: 'https://www.linkedin.com/in/himani-rajput-094637267/', src: 'https://img.icons8.com/ios-filled/50/ffffff/linkedin.png', alt: 'LinkedIn' }
@@ -40,7 +40,7 @@ function Sidebar() {
 
       <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
         <div className="imgdiv">
-          <img className="sideimg" src={himani} alt="himani" />
+          <img className="sideimg" src={akarsh} alt="himani" />
           <div className="texthim">Himani Rajput</div>
           <div className="social-icons">
             {socialLinks.map((link, index) => (
