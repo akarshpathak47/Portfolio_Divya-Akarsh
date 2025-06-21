@@ -82,7 +82,7 @@ export default function ContactSection() {
           <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" />
         </a>
         <a
-          href="https://www.instagram.com/himani_rajput03/?igsh=MWpvdnV1MGRuaXJ2MQ=="
+          href="https://www.instagram.com/akarsh_pathak_08?igsh=bWVhODBiMGEybWZ0"
           target="_blank"
           rel="noopener noreferrer"
         >

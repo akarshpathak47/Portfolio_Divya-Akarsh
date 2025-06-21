@@ -14,9 +14,9 @@ import {
 
 const socialLinks = [
   { href: 'https://github.com/akarshpathak47', src: 'https://img.icons8.com/ios-filled/50/ffffff/github.png', alt: 'Github' },
-  { href: '#', src: 'https://img.icons8.com/ios-filled/50/ffffff/facebook.png', alt: 'Facebook' },
-  { href: 'https://www.instagram.com/himani_rajput03/?igsh=MWpvdnV1MGRuaXJ2MQ==', src: 'https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png', alt: 'Instagram' },
-  { href: 'https://www.linkedin.com/in/himani-rajput-094637267/', src: 'https://img.icons8.com/ios-filled/50/ffffff/linkedin.png', alt: 'LinkedIn' }
+  { href: 'https://www.facebook.com/share/1Fj4gJtgrT/', src: 'https://img.icons8.com/ios-filled/50/ffffff/facebook.png', alt: 'Facebook' },
+  { href: 'https://www.instagram.com/akarsh_pathak_08?igsh=bWVhODBiMGEybWZ0', src: 'https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png', alt: 'Instagram' },
+  { href: 'https://www.linkedin.com/in/akarsh-pathak-463834283/', src: 'https://img.icons8.com/ios-filled/50/ffffff/linkedin.png', alt: 'LinkedIn' }
 ];
 
 const menuItems = [
@@ -41,7 +41,7 @@ function Sidebar() {
       <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
         <div className="imgdiv">
           <img className="sideimg" src={akarsh} alt="himani" />
-          <div className="texthim">Himani Rajput</div>
+          <div className="texthim">Divya Akarsh Pathak</div>
           <div className="social-icons">
             {socialLinks.map((link, index) => (
               <a key={index} href={link.href} target="_blank" rel="noopener noreferrer">
